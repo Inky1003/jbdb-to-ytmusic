@@ -27,7 +27,7 @@ def sres (a, n):
 
 
     requestsend = {
-        "links": frsend.replace("\"", "'"),
+        "links": frsend.replace("\"", "\\\""),
         "nome":  a,
         "artista": n,
         "pash": shash
