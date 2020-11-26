@@ -13,7 +13,7 @@ def sres (a, n):
     for result in search_results:
         if result["resultType"] == "song" or result["resultType"] == "video":
             resultlt = list()
-            resultlt.append(final_results.append("https://www.youtube.com/watch?v=" + result["videoId"]))
+            resultlt.append("https://www.youtube.com/watch?v=" + result["videoId"])
 
             r = requests.get(result["thumbnails"][len(result["thumbnails"])-1]["url"], stream=True)
             if r.status_code == 200:
